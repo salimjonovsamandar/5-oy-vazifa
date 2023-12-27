@@ -1,97 +1,49 @@
-// 1-masala
-// function numbereven(arg) {
-//   let sum = 0;
-//   for (const item of arg) {
-//     if (typeof item != "number") {
-//       throw new Error("Massiv ichidagi element bunday bo'lishi mumkin emas");
-//     }
-//     if (item % 2 == 0) {
-//       sum += item ** 2;
-//     }
-//   }
-//   return sum;
-// }
-// try {
-//   console.log(numbereven([1, 2, 3, 4, 5, 6, 7, 8]));
-// } catch (error) {
-//   console.log(error);
-// }
+const data = [
+  {
+    id: 1,
+    name: "Sity",
+    img: "https://picsum.photos/id/238/200/300",
+    description: "Lorem ipsum dolor sit amet consectetur.",
+  },
 
-// // 2-masala
-// function words(arg) {
-//   let newArr = [];
-//   for (const item of arg) {
-//     if (typeof item != "string") {
-//       throw new Error("Massiv ichidagi element bunday bo'lishi mumkin emas");
-//     } else {
-//       newArr.push(item[0]);
-//     }
-//   }
-//   return newArr;
-// }
-// try {
-//   console.log(words([1, "salom", "dunyo"]));
-// } catch (error) {
-//   console.log(error);
-// }
+  {
+    id: 2,
+    name: "Railway",
+    img: "https://picsum.photos/id/1/200/300",
+    description: "Lorem ipsum dolor sit amet consectetur.",
+  },
 
-// 3-masala
-// let n = {
-//     age: 20,
-//     name: "John",
-//     born: 2003,
-// }
-// function allSum(arg) {
-//   let a = Object.values(arg);
-//   let s = 0;
-//   for (const item of a) {
-//     if (typeof item == "number") {
-//       s += item;
-//     }
-//   }
-//   return s;
-// }
-// console.log(allSum(n));
+  {
+    id: 3,
+    name: "Road",
+    img: "https://picsum.photos/id/17/200/300",
+    description: "Lorem ipsum dolor sit amet consectetur.",
+  },
 
-// // 4-masala
-// // let n = [1, 2, 3, 4, 5, 6, 7]
-// function tub(arg) {
-//   let counter = 0;
-//   for (let i = 1; i <= arg; i++) {
-//     if (arg % i == 0) {
-//       counter++;
-//     }
-//   }
-//   return counter;
-// }
-// function sumTub(arg) {
-//   let res = 0;
-//   for (const item of arg) {
-//     if (tub(item) == 2) {
-//       res += item;
-//     }
-//   }
-//   return res;
-// }
-// // console.log(sumTub(n));
+  {
+    id: 4,
+    name: "Book",
+    img: "https://picsum.photos/id/24/200/300",
+    description: "Lorem ipsum dolor sit amet consectetur.",
+  },
 
-// // 5-masala
-// // let n = 123457;
-// function odd(arg) {
-//   let counter = 0;
-//   for (let i = 1; i <= arg; i *= 10) {
-//     counter++;
-//   }
-//   return counter;
-// }
-// function oddSum(arg) {
-//   let sum = 0;
-//   for (let i = odd(arg); i >= 0; i--) {
-//     let a = Math.trunc(arg / 10 ** (i - 1)) % 10;
-//     if (a % 2 == 1) {
-//       sum += Math.trunc(arg / 10 ** (i - 1)) % 10;
-//     }
-//   }
-//   return sum;
-// }
-// // console.log(oddSum(n));
+  {
+    id: 5,
+    name: "Mountain",
+    img: "https://picsum.photos/id/29/200/300",
+    description: "Lorem ipsum dolor sit amet consectetur.",
+  },
+
+  {
+    id: 6,
+    name: "Nature",
+    img: "https://picsum.photos/id/28/200/300",
+    description: "Lorem ipsum dolor sit amet consectetur.",
+  },
+];
+
+const button = document.querySelector("#btn");
+
+button.addEventListener("click", function () {
+  document.getElementsByClassName("card[2]").innerHTML = data;
+});

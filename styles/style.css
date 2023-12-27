@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: rgb(148, 202, 202);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card{
+ padding: 5px;
+ margin-top: 50px;
+ /* padding-top: 50px; */
+background-color: aliceblue;
+width: 210px;
+height: 500px;
+margin-left: auto;
+margin-right: auto;
+ 
+}
+
+.card h2{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+
+}
+.card p{
+    padding: 10px;
+}
+
+.card #btn {
+    padding: 5px 20px ;
+    margin-top: 20px;
+    margin-left: 50px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border: 1px solid aquamarine;
+    font-size: 20px;
+}
+
+.card #btn:hover{
+color: red;
+background-color: aquamarine;
+border: 1px solid black;
+}
