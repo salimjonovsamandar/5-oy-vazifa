@@ -4,15 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>Document</title>
+    <title>5 oy 3 dars</title>
   </head>
   <body>
-    <div class="card">
-      <h2 id="title">Sity</h2>
-      <img id="img" src="https://picsum.photos/id/238/200/300" alt="rasm bor" />
-      <p id="comment">Lorem ipsum dolor sit amet consectetur.</p>
-      <button id="btn">Play</button>
+    <div class="form_wrapper">
+      <input type="text" id="name" placeholder="Enter name..." />
+      <input type="number" id="age" placeholder="Enter age..." />
+      <select name="" id="car">
+        <option value="" selected>Select car</option>
+        <option value="Damas">Damas</option>
+        <option value="Nexia">Nexia</option>
+        <option value="Spark">Spark</option>
+      </select>
+      <textarea
+        placeholder="Enter description..."
+        name=""
+        id="description"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <button id="btn">Saqlash</button>
     </div>
-    <script src="./index.js"></script>
+
+    <table class="table">
+      <thead>
+        <th>No</th>
+        <th>Ismi</th>
+        <th>Yoshi</th>
+        <th>Mashinasi</th>
+        <th>Izoh</th>
+        <th >Amallar</th>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+
+    
+    <script src="./index.js" type="module"></script>
   </body>
 </html>

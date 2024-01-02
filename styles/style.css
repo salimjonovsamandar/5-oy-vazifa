@@ -2,45 +2,51 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-body{
-    background-color: rgb(148, 202, 202);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.card{
- padding: 5px;
- margin-top: 50px;
- /* padding-top: 50px; */
-background-color: aliceblue;
-width: 210px;
-height: 500px;
-margin-left: auto;
-margin-right: auto;
- 
+  font-family: sans-serif;
 }
 
-.card h2{
-    text-align: center;
-    padding: 10px;
-    font-size: 25px;
-
-}
-.card p{
-    padding: 10px;
+.form_wrapper {
+  width: 600px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.card #btn {
-    padding: 5px 20px ;
-    margin-top: 20px;
-    margin-left: 50px;
-    transition: all 0.5s ease;
-    cursor: pointer;
-    border: 1px solid aquamarine;
-    font-size: 20px;
+input,
+select,
+button,
+textarea {
+  padding: 10px;
+}
+textarea {
+  resize: none;
 }
 
-.card #btn:hover{
-color: red;
-background-color: aquamarine;
-border: 1px solid black;
+button {
+  cursor: pointer;
+}
+
+.table {
+  border: 1px solid black;
+  width: 1000px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-size: 20px;
+  text-align: center;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+td .update {
+  color: blue;
+  cursor: pointer;
+}
+td .delete {
+  color: red;
+  cursor: pointer;
 }
